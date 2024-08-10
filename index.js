@@ -77,6 +77,10 @@ async function run() {
 run().catch(console.dir);
 
 
+app.get('/', (req, res) => {
+    res.send('Hello World!')
+})
+
 app.listen(port, () => {
     console.log(`User Management running on port ${port}`)
 })
